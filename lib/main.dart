@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitabi/error_screens/PageNotFound.dart';
-
+import 'Login/login.dart';
 import 'splashScreens/HomeScreen.dart';
 
 void main() {
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: login(),
     );
   }
 }
