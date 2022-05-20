@@ -41,9 +41,8 @@ class NotFound extends StatelessWidget {
     ),
                ),
                
-                Container(
-                   width: 440,
-                   height: 180,
+                Expanded(child: Container(
+                  
               decoration: BoxDecoration(
                   gradient:LinearGradient(
                     colors: [ Colors.white,Color(0xFFFEBD82)],
@@ -51,7 +50,7 @@ class NotFound extends StatelessWidget {
                     begin: Alignment(0, -0.1),
                     
                   ),)
-              ),
+              ),)
                
  ] )
   )

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:kitabi/constant.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
+import '../signup/signup.dart';
+import '../Login/login.dart';
+
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                                borderRadius : BorderRadius.circular(10),
                                
                                )),
-                               child: new Text("Sign in"), onPressed: (){},)]),flex: 3),Row(
+                               child: new Text("Sign in"), onPressed: (){Get.to(login());},)]),flex: 3),Row(
               children: <Widget>[
                 const Text("Don't have an account?"),
                 TextButton(
@@ -38,7 +42,9 @@ class HomeScreen extends StatelessWidget {
                     'Sign up',
                     style: TextStyle(color:basic2, fontSize: 15, fontWeight: FontWeight.bold),
                   ),
-                  onPressed:(){},
+                  onPressed:(){
+                    Get.to(Signup());
+                    },
                 )
               ],
               mainAxisAlignment: MainAxisAlignment.center,
